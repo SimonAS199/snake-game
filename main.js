@@ -103,15 +103,23 @@ window.addEventListener("keydown", (k) => {
     switch (k.keyCode) {
 
         case 37: //LEFT
+            if (previousDirection === "RIGHT") return;
+
             direction = "LEFT";
             break;
         case 38: //UP
+            if (previousDirection === "DOWN") return;
+
             direction = "UP";
             break;
         case 39: //RIGHT
+            if (previousDirection === "LEFT") return;
+
             direction = "RIGHT";
             break;
         case 40: //DOWN
+            if (previousDirection === "UP") return;
+
             direction = "DOWN";
             break;
 
@@ -125,21 +133,25 @@ const moveInGivenDirection = (dir) => {
             snake.forEach(segment => {
                 segment.x -= SNAKE_SPEED;
             })
+            previousDirection = "LEFT";
             break;
         case "UP":
             snake.forEach(segment => {
                 segment.y -= SNAKE_SPEED;
             })
+            previousDirection = "UP";
             break;
         case "RIGHT":
             snake.forEach(segment => {
                 segment.x += SNAKE_SPEED;
             })
+            previousDirection = "RIGHT";
             break;
         case "DOWN":
             snake.forEach(segment => {
                 segment.y += SNAKE_SPEED;
             })
+            previousDirection = "DOWN";
             break;
         default:
             return;
@@ -152,5 +164,5 @@ startGame();
 
 const restartGame = () => {
     alert("Game Over!")
-    //location.reload();
+    location.reload();
 }
