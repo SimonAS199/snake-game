@@ -19,3 +19,6 @@ I would really appreciate any help.
 
 Edit 2021-02-11: 
 I somehow messed up my GIT-push, code is currently not up to date. Fix incoming ASAP
+
+Edit 2021-02-11:
+Fixed my git push. Code is up to date.
