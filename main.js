@@ -4,7 +4,7 @@ let score = 0;
 let newSegments = 0;
 
 const SNAKE_SPEED = 1;
-const EXPANSION_RATE = 2;
+const EXPANSION_RATE = 1;
 
 const gameScreen = document.getElementById("gameScreen");
 const scoreBoard = document.getElementById("scoreboard");
