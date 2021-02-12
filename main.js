@@ -88,12 +88,13 @@ const outOfBounds = () => {
 
 }
 
-const expandSnake = (newSegments) => {
+const expandSnake = (segments) => {
 
-    for (i = 0; i < newSegments; i++){
+    for (i = 0; i < segments; i++){
         snake.push({x: snake[snake.length - 1].x, y: snake[snake.length - 1].y});
     }
-
+    newSegments = 0;
+    
 }
 
 //CONTROLS
@@ -131,7 +132,7 @@ const moveInGivenDirection = (dir) => {
     switch (dir) {
         case "LEFT":
             snake.forEach(segment => {
-                segment.x -= SNAKE_SPEED;
+                segment.x -= SNAKE_SPEED; //solution might lie here? 
             })
             previousDirection = "LEFT";
             break;
