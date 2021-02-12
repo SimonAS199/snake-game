@@ -89,7 +89,7 @@ const outOfBounds = () => {
 }
 
 const expandSnake = (segments) => {
-
+    //maybe a setTimeout could work?
     for (i = 0; i < segments; i++){
         snake.push({x: snake[snake.length - 1].x, y: snake[snake.length - 1].y});
     }
