@@ -22,3 +22,6 @@ I somehow messed up my GIT-push, code is currently not up to date. Fix incoming 
 
 Edit 2021-02-11:
 Fixed my git push. Code is up to date.
+
+Edit 2021-02-13:
+I stopped working on the project due to frustration. I'm probably not good enough yet. Comming back to it one I accquired the necessary skills.
